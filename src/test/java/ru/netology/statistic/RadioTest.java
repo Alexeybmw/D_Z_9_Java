@@ -139,7 +139,20 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void maxRadioStationTest() {
+        Radio radio = new Radio(10);
+
+        int expected = 9;
+        int actual = radio.getMaxRadioStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
+
+
+
 
 
 
